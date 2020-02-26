@@ -1,17 +1,19 @@
 ﻿using System;
+using MahApps.Metro.Controls;
 
 namespace Ui.Wpf.Common
 {
     /// <summary>
     /// codebehind for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : IDockWindow
+    public partial class MainWindow : MetroWindow, IDockWindow
     {
-        public MainWindow(IShell shell)
+        public MainWindow(IShell shell):base()
         {
             Shell = shell;
             DataContext = Shell;
-            InitializeComponent();
+          //  InitializeComponent();
+            
         }
 
         private IShell Shell { get; }

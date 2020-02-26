@@ -13,7 +13,7 @@ namespace Ui.Wpf.Common
         public ChildWindowView(UiShowChildWindowOptions options)
         {
             DataContext = options;
-            InitializeComponent();
+            // InitializeComponent();
         }
     }
 

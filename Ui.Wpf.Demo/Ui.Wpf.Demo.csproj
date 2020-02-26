@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LanguageTargets>$(MSBuildToolsPath)\Microsoft.CSharp.targets</LanguageTargets>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ui.Wpf.Demo</RootNamespace>
     <AssemblyName>Ui.Wpf.Demo</AssemblyName>

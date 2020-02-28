@@ -16,7 +16,9 @@
     <Compile Update="Properties\Resources.Designer.cs" DesignTime="True" AutoGen="True" DependentUpon="Resources.resx" />
 
     <None Update="Properties\Settings.settings" Generator="SettingsSingleFileGenerator" LastGenOutput="Settings.Designer.cs" />
-    <Compile Update="Properties\Settings.Designer.cs" DesignTime="True" AutoGen="True" DependentUpon="Settings.settings" />
+    <Compile Update="Properties\Settings.Designer.cs" DesignTime="True" AutoGen="True" DependentUpon="Settings.settings">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
 
     <!--<ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

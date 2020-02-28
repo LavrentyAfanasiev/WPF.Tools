@@ -12,7 +12,7 @@ namespace Ui.Wpf.Common.DockingManagers
 
         public DefaultDockingManager()
         {
-           // InitializeComponent();
+            InitializeComponent();
         }
     }
 }

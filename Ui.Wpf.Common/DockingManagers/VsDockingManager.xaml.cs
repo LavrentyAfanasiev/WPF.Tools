@@ -14,7 +14,7 @@ namespace Ui.Wpf.Common.DockingManagers
 
         public VsDockingManager()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }

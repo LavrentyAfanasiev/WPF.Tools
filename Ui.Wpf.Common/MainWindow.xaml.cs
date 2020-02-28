@@ -12,7 +12,7 @@ namespace Ui.Wpf.Common
         {
             Shell = shell;
             DataContext = Shell;
-          //  InitializeComponent();
+            InitializeComponent();
             
         }
 

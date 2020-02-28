@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <LanguageTargets>$(MSBuildToolsPath)\Microsoft.CSharp.targets</LanguageTargets>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -8,6 +8,7 @@
     <AssemblyTitle>Ui.Wpf.KanbanControl.Tests</AssemblyTitle>
     <AssemblyProduct>Ui.Wpf.KanbanControl.Tests</AssemblyProduct>
     <AssemblyCopyright>Copyright © 2019</AssemblyCopyright>
+    <UseWpf>true</UseWpf>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>

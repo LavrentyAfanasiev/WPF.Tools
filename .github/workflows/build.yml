@@ -13,4 +13,4 @@ jobs:
       with:
         dotnet-version: '3.1.100' # SDK Version to use.
     - run: dotnet build WPF.Tools.sln
-    - run: dotnet test
+    - run: dotnet test WPF.Tools.sln

@@ -9,7 +9,9 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Set env
-      run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:24})
+      run:  echo "##[set-env name=RELEASE_VERSION;]$($env:GITHUB_REF.substring(25))"
+    - name: print version
+      run: echo $env:RELEASE_VERSION
     - uses: actions/checkout@master
     - uses: actions/setup-dotnet@v1
       with:

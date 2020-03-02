@@ -16,9 +16,9 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.100' # SDK Version to use.
-    - run: dotnet pack ./Ui.Wpf.Common/Ui.Wpf.Common.csproj -c Release -o NuGetPackages /p:Version=$RELEASE_VERSION
+    - run: dotnet pack ./Ui.Wpf.Common/Ui.Wpf.Common.csproj -c Release -o NuGetPackages /p:Version=$env:RELEASE_VERSION
     - name: Push to feeds
       env:
         MYGET_SOURCE: https://www.myget.org/F/gabbacode/api/v3/index.json
       run: |
-        dotnet nuget push ./NuGetPackages/Ui.Wpf.Common.$RELEASE_VERSION.nupkg -k ${{ secrets.MYGET_APIKEY }} -s $MYGET_SOURCE
+        dotnet nuget push ./NuGetPackages/Ui.Wpf.Common.$env:RELEASE_VERSION.nupkg -k ${{ secrets.MYGET_APIKEY }} -s $MYGET_SOURCE

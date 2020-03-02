@@ -15,8 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ui.Wpf.Demo", "Ui.Wpf.Demo\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5582DEB9-10E7-47D8-85ED-ACDC33C0661A}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\AddSourceWithCredentialsToNuGetConfig.ps1 = .github\workflows\AddSourceWithCredentialsToNuGetConfig.ps1
 		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\publish_common.yml = .github\workflows\publish_common.yml
+		.github\workflows\publish_control.yml = .github\workflows\publish_control.yml
 	EndProjectSection
 EndProject
 Global
